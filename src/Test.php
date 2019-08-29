@@ -7,6 +7,6 @@ namespace Msx;
 class Test
 {
     public function test(){
-        echo 'msx load ok! [ '.(microtime(true)-LARAVEL_START).' s]';
+        echo 'test commit msx load ok! [ '.(microtime(true)-LARAVEL_START).' s]';
     }
 }

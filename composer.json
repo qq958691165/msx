@@ -1,0 +1,14 @@
+{
+    "name": "jackclub/msx",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Martin Jack",
+            "email": "958691165@qq.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": { "Msx\\": "src/" }
+    }
+}

@@ -17,6 +17,7 @@ class MsxProvider extends ServiceProvider
         $this->publishes([
             __DIR__.'/config/msx.php' => config_path('msx.php'), // 发布配置文件到 laravel 的config 下
             __DIR__.'/assets' => public_path('msx_assets'), // 发布前端资源文件到 laravel 的public/msx_assets 下
+            __DIR__.'/database/migrations' => database_path('migrations'),
         ]);
     }
 
@@ -30,6 +31,5 @@ class MsxProvider extends ServiceProvider
         //load config
         $config=array_merge(include __DIR__.'/config/msx.php',config('msx',[]));
         config()->set('msx',$config);
-        dd(config('msx.test'));
     }
 }

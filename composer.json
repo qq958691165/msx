@@ -1,6 +1,7 @@
 {
     "name": "jackclub/msx",
     "license": "MIT",
+    "version": "0.0.1",
     "authors": [
         {
             "name": "Martin Jack",
@@ -10,5 +11,12 @@
     "require": {},
     "autoload": {
         "psr-4": { "Msx\\": "src/" }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Msx\\MsxProvider"
+            ]
+        }
     }
 }
